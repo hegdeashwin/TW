@@ -1,0 +1,25 @@
+{{#each flightsData.flights}}
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Rs. {{amount}}</h3>
+		</div>
+		<div class="panel-body">
+			<div class="col-xs-6 col-sm-4">
+				<h3>{{flightNo}}</h3>
+				<h4>{{origin}} > {{destination}}</h4>
+				<div>Depart: {{time.depart}}</div>
+				<div>Arrive: {{time.arrive}}</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<h3>{{flightNo}}</h3>
+				<h4>{{origin}} > {{destination}}</h4>
+				<div>Depart: {{time.depart}}</div>
+				<div>Arrive: {{time.arrive}}</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<img src="http://placehold.it/120x100">
+				<button class="btn btn-default btn-block">Book Now</button>
+			</div>
+		</div>
+	</div>
+{{/each}}

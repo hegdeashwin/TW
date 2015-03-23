@@ -1,0 +1,63 @@
+{
+	"cities": [{
+		"city": {
+			"code": "kol",
+			"name": "kolhapur"
+		}
+	}, {
+		"city": {
+			"code": "nan",
+			"name": "nanded"
+		}
+	}, {
+		"city": {
+			"code": "amr",
+			"name": "amravati"
+		}
+	}, {
+		"city": {
+			"code": "sol",
+			"name": "solapur"
+		}
+	}, {
+		"city": {
+			"code": "nas",
+			"name": "nashik"
+		}
+	}, {
+		"city": {
+			"code": "pim",
+			"name": "pimpri"
+		}
+	}, {
+		"city": {
+			"code": "tha",
+			"name": "thane"
+		}
+	}, {
+		"city": {
+			"code": "nag",
+			"name": "nagpur"
+		}
+	}, {
+		"city": {
+			"code": "pun",
+			"name": "pune"
+		}
+	}, {
+		"city": {
+			"code": "mum",
+			"name": "mumbai"
+		}
+	}, {
+		"city": {
+			"code": "jal",
+			"name": "jalgaon"
+		}
+	}, {
+		"city": {
+			"code": "ahm",
+			"name": "ahmednagar"
+		}
+	}]
+}

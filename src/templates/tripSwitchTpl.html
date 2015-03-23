@@ -1,0 +1,63 @@
+<ul id="searchForTrip" class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a href="#oneway" aria-controls="home" role="tab" data-toggle="tab">One Way</a></li>
+	<li role="presentation"><a href="#return" aria-controls="profile" role="tab" data-toggle="tab">Return</a></li>
+</ul>
+<div class="tab-content" style="margin-top: 20px;">
+	<div role="tabpanel" class="tab-pane active" id="oneway">
+		<form>
+			<div class="form-group">
+				<input type="text" class="origin form-control" list="oneWayOrigin" placeholder="Enter Origin City">
+				<datalist id="oneWayOrigin">
+					{{#each datalist.cities}}
+				  		<option value="{{city.name}}">
+				  	{{/each}}
+				</datalist>
+			</div>
+			<div class="form-group">
+				<input type="text" class="destination form-control" list="oneWayDestination" placeholder="Enter Destination City">
+				<datalist id="oneWayDestination">
+					{{#each datalist.cities}}
+				  		<option value="{{city.name}}">
+				  	{{/each}}
+				</datalist>
+			</div>
+			<div class="form-group">
+				<input type="text" class="departure datepicker form-control" placeholder="Departure Date">
+			</div>
+			<div class="form-group">
+				<input type="text" class="passengers form-control" placeholder="Passengers">
+			</div>
+			<button class="btn btn-primary">Search</button>
+		</form>
+	</div>
+	<div role="tabpanel" class="tab-pane" id="return">
+		<form>
+			<div class="form-group">
+				<input type="text" list="returnOrigin" class="origin form-control" placeholder="Enter Origin City">
+				<datalist id="returnOrigin">
+					{{#each datalist.cities}}
+				  		<option value="{{city.name}}">
+				  	{{/each}}
+				</datalist>
+			</div>
+			<div class="form-group">
+				<input type="text" class="destination form-control" list="returnDestination" placeholder="Enter Destination City">
+				<datalist id="returnDestination">
+					{{#each datalist.cities}}
+				  		<option value="{{city.name}}">
+				  	{{/each}}
+				</datalist>
+			</div>
+			<div class="form-group">
+				<input type="text" class="departure datepicker form-control" placeholder="Departure Date">
+			</div>
+			<div class="form-group">
+				<input type="text" class="return datepicker form-control" placeholder="Return Date">
+			</div>
+			<div class="form-group">
+				<input type="text" class="passengers form-control" placeholder="Passengers">
+			</div>
+			<button class="btn btn-primary">Search</button>
+		</form>
+	</div>
+</div>

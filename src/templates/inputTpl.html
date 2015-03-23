@@ -1,0 +1,6 @@
+<input type="text" class="form-control" list="{{list}}" placeholder="{{inputType}}">
+<datalist id="{{list}}">
+	{{#each datalist.cities}}
+  		<option value="{{city.name}}">
+  	{{/each}}
+</datalist>
